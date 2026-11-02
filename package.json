@@ -1,0 +1,26 @@
+{
+  "name": "@profullstack/browser-fingerprint",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "One vote per browser, not per IP: a tiny no-dependency browser fingerprint (canvas, WebGL, audio, fonts, screen, client hints) bound to a server-signed challenge, turned into a salted visitorKey with fixed-window limits (memory, SQLite, Redis) and a headless/bot score. Never stores the raw fingerprint.",
+  "keywords": ["fingerprint", "browser-fingerprint", "device-fingerprint", "rate-limit", "throttle", "anti-abuse", "voting", "bot-detection", "headless", "hono", "nextjs", "bun"],
+  "repository": { "type": "git", "url": "git+https://github.com/profullstack/browser-fingerprint.git" },
+  "homepage": "https://github.com/profullstack/browser-fingerprint#readme",
+  "bugs": { "url": "https://github.com/profullstack/browser-fingerprint/issues" },
+  "license": "MIT",
+  "author": "Profullstack, Inc.",
+  "sideEffects": false,
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./client": { "types": "./client.d.ts", "default": "./src/client.js" },
+    "./client.js": "./src/client.js",
+    "./hono": { "types": "./hono.d.ts", "default": "./src/hono.js" },
+    "./source": { "types": "./source.d.ts", "default": "./src/source.js" },
+    "./package.json": "./package.json"
+  },
+  "types": "./index.d.ts",
+  "files": ["src", "index.js", "index.d.ts", "client.d.ts", "hono.d.ts", "source.d.ts", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" }
+}
